@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MEGALANDS Builder</title>
+    <!-- core -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--carousel-->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet"> 
+</head>
+<body>
+<section id="API">
+  <div class="container">
+   <header id="header-12" class="col-full-hd header-page h-option-10 js-dynamic-menu">
+    <div class="blk-menu-fix tagert-menu template-12-flag">
+      <div class="row">
+        <div class="col-xs-4 fs-margin-top">
+                <!--   <div class="fs-logo">
+                    <a href=""><img src="images/logo-fpt.png"></a>
+                  </div> -->
+          <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Tìm Kiếm">
+          </div>
+        </div>
+  <div class="col-xs-8">
+  <nav><ul class="list-menu">
+    <li><a href=""><i class="fa fa-home"></i>Trang Chủ</a></li>
+    <li><a href=""><i class="fa fa-mobile"></i>Điện Thoại</a></li>
+    <li> <a href=""><i class="fa fa-laptop"></i>Laptop</a></li>
+    <li><a href=""><i class="fa fa-apple"></i>Apple</a></li>
+    <li><a href=""><i class="fa fa-tablet"></i>Tablet</a></li>
+    <li><a href=""><i class="fa fa-headphones"></i>Phụ Kiện</a></li>
+    <li><a href="" data-toggle="modal" data-target="#dangnhap"><i class="fa fa-gamepad"></i>Đăng Nhập</a></li>
+     <li><a href="" data-toggle="modal" data-target="#giohang"><i class="fa fa-shopping-cart"></i>Giỏ Hàng</a></li>
+  </ul></nav>
+          <!-- Modal Dang Nhap -->
+        <div id="dangnhap" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Đăng Nhập</h4>
+              </div>
+              <div class="modal-body modal-change">
+                 <form>
+                  <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                  </div>
+                <button type="button" class="btn btn-success">Đăng Nhập</button>
+                 <button type="button" class="btn btn-primary">Đăng Kí</button>
+               </form>  
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal giỏ hàng -->
+        <div id="giohang" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Giỏ hàng của bạn</h4>
+              </div>  
+              <div class="modal-body modal-shopping-change">
+                  <div class="md-content">
+                  <table class="table table-hover">
+                    <thead>
+                     <tr>
+                        <th>Sản Phẩm</th>
+                        <th>Đơn Gía</th>
+                        <th>Số Lượng</th>
+                        <th>Thành Tiền</th>
+                     </tr>
+                    </thead>
+                    <tbody>
+                     <tr>
+                        <td>
+                       <a href=""> <img class="md-img" src="images/sanpham-01.jpg" alt="images"></a>
+                      <span class=title>Iphone 7</span>
+                      </td>
+                      <td class="md-pdtop50 price"><span>1.000.000đ</span></td>
+                      <td class="md-pdtop40">
+                        <select class="form-control" id="sel1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                       </select>
+                     </td>
+                     <td class="md-pdtop50"><span>1.000.000đ</span></td>
+                     <td class="md-remove"><a href="#" class='close'>X</a></td>
+                     </tr>
+                     <tr>
+                        <td>
+                       <a href=""> <img class="md-img" src="images/sanpham-01.jpg" alt="images"></a>
+                      <span class=title>Iphone 7</span>
+                      </td>
+                      <td class="md-pdtop50"><span>1.000.000đ</span></td>
+                      <td class="md-pdtop40">
+                        <select class="form-control" id="sel1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                       </select>
+                     </td>
+                     <td class="md-pdtop50"><span>1.000.000đ</span></td>
+                     <td class="md-remove"><a href="#" class='close'>X</a></td>
+                     </tr>
+                    </tbody>
+                  </table>
+                  <div class="md-total">
+                    <span>Gía thanh toán :</span><span class="price">2.000.000đ</span>
+                  </div>
+                  <div class="md-pay">
+                     <button type="button" class="btn btn-success">Mua Hàng</button>
+                 <button type="button" class="btn btn-primary">Tiếp Tục Mua Hàng</button>
+                  </div>
+                 
+                  </div> <!-- md-content -->
+              </div> <!-- modal-body -->
+             
+            </div>
+          </div>
+        </div>
+
+        </div> <!-- col-list -->
+    </div>
+    </div>      
+   </header>
+ <div class="carousel">
+        <div class="carousel-items">
+          <div class="list-img">
+            <figure>
+              <img src="images/sli-0.jpg" alt="item">
+            </figure>
+          </div>
+           <div class="list-img">
+            <figure>
+              <img src="images/sli-1.jpg" alt="item">
+           </figure>
+          </div>
+           <div class="list-img">
+            <figure>
+              <img src="images/sli-2.jpg" alt="item">
+           </figure>
+          </div>
+           <div class="list-img">
+            <figure>
+              <img src="images/sli-4.jpg" alt="item">
+            </figure>
+          </div>
+        </div><!-- item --> 
+        <div class="carouse-prev">
+           <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </div>
+        <div class="carouse-next">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div> 
+ </div> <!-- carousel -->
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="list-item">
+              <figure class="f-img">
+                <img src="images/sanpham-01.jpg">
+              </figure>
+              <div class="it-infor">
+                <div class="it-name"> <span>iPhone 7 Plus 256GB</span></div>
+                <div class="it-price"> <span>27.900.000Đ</span></div>
+              </div>
+              <div class="button-order">
+                <a href="">Mua Ngay</a>
+              </div>
+              <div class="button-detail">
+                <a href="">Chi Tiết</a>
+              </div>
+            </div> <!-- list-item -->
+          </div> <!-- end col- -->
+
+           <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="list-item">
+              <figure class="f-img">
+                <img src="images/sanpham-01.jpg">
+              </figure>
+              <div class="it-infor">
+                <div class="it-name"> <span>iPhone 7 Plus 256GB</span></div>
+                <div class="it-price"> <span>27.900.000Đ</span></div>
+              </div>
+              <div class="button-order">
+                <a href="">Mua Ngay</a>
+              </div>
+              <div class="button-detail">
+                <a href="">Chi Tiết</a>
+              </div>
+            </div> <!-- list-item -->
+          </div> <!-- end col- -->
+
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="list-item">
+              <figure class="f-img">
+                <img src="images/sanpham-01.jpg">
+              </figure>
+              <div class="it-infor">
+                <div class="it-name"> <span>iPhone 7 Plus 256GB</span></div>
+                <div class="it-price"> <span>27.900.000Đ</span></div>
+              </div>
+              <div class="button-order">
+                <a href="">Mua Ngay</a>
+              </div>
+              <div class="button-detail">
+                <a href="">Chi Tiết</a>
+              </div>
+            </div> <!-- list-item -->
+          </div> <!-- end col- -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="list-item">
+              <figure class="f-img">
+                <img src="images/sanpham-01.jpg">
+              </figure>
+              <div class="it-infor">
+                <div class="it-name"> <span>iPhone 7 Plus 256GB</span></div>
+                <div class="it-price"> <span>27.900.000Đ</span></div>
+              </div>
+              <div class="button-order">
+                <a href="">Mua Ngay</a>
+              </div>
+              <div class="button-detail">
+                <a href="">Chi Tiết</a>
+              </div>
+            </div> <!-- list-item -->
+          </div> <!-- end col- -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="list-item">
+              <figure class="f-img">
+                <img src="images/sanpham-01.jpg">
+              </figure>
+              <div class="it-infor">
+                <div class="it-name"> <span>iPhone 7 Plus 256GB</span></div>
+                <div class="it-price"> <span>27.900.000Đ</span></div>
+              </div>
+              <div class="button-order">
+                <a href="">Mua Ngay</a>
+              </div>
+              <div class="button-detail">
+                <a href="">Chi Tiết</a>
+              </div>
+            </div> <!-- list-item -->
+          </div> <!-- end col- -->
+
+           <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="list-item">
+              <figure class="f-img">
+                <img src="images/sanpham-01.jpg">
+              </figure>
+              <div class="it-infor">
+                <div class="it-name"> <span>iPhone 7 Plus 256GB</span></div>
+                <div class="it-price"> <span>27.900.000Đ</span></div>
+              </div>
+              <div class="button-order">
+                <a href="">Mua Ngay</a>
+              </div>
+              <div class="button-detail">
+                <a href="">Chi Tiết</a>
+              </div>
+            </div> <!-- list-item -->
+          </div> <!-- end col- -->
+           <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="list-item">
+              <figure class="f-img">
+                <img src="images/sanpham-01.jpg">
+              </figure>
+              <div class="it-infor">
+                <div class="it-name"> <span>iPhone 7 Plus 256GB</span></div>
+                <div class="it-price"> <span>27.900.000Đ</span></div>
+              </div>
+              <div class="button-order">
+                <a href="">Mua Ngay</a>
+              </div>
+              <div class="button-detail">
+                <a href="">Chi Tiết</a>
+              </div>
+            </div> <!-- list-item -->
+          </div> <!-- end col- -->
+           <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="list-item">
+              <figure class="f-img">
+                <img src="images/sanpham-01.jpg">
+              </figure>
+              <div class="it-infor">
+                <div class="it-name"> <span>iPhone 7 Plus 256GB</span></div>
+                <div class="it-price"> <span>27.900.000Đ</span></div>
+              </div>
+              <div class="button-order">
+                <a href="">Mua Ngay</a>
+              </div>
+              <div class="button-detail">
+                <a href="">Chi Tiết</a>
+              </div>
+            </div> <!-- list-item -->
+
+
+          </div> <!-- end col- -->
+        </div> <!-- row -->
+    </div>
+
+    <section id="footer_2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="footer-title" data-animate="zoomIn">
+                    <span>ABOUT US</span>
+                </div>
+                <div class="footer-content" data-animate="zoomIn">
+                    Is amazing, modern and clean landing page for showcase your app anything else.  A  valuable experience only COSMOS users can enjoy a variety of domestic and international premium services for free.
+                </div>
+                <div class="icons-social" data-animate="zoomIn-parent">
+                    <a href="#"><img src="images/twitter-logo.png" alt="Twitter"/></a>
+                    <a href="#"><img src="images/facebook-logo.png" alt="Facebook"/></a>
+                    <a href="#"><img src="images/google-logo.png" alt="Google"/></a>
+                    <a href="#"><img src="images/pinterest-logo.png" alt="Pinterest"/></a>
+                    <a href="#"><img src="images/linkedin-logo.png" alt="In"/></a>
+                </div>
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <div class="footer-subscrible">
+                    <div class="footer-title" data-animate="zoomIn">
+                        <span>SUBCRIBLE US TO DOWNLOAD FREE TRIAL APP</span>
+                    </div>
+                    <div class="footer-content" data-animate="zoomIn">
+                        This app does everything you could possibly want it to do and not only that, it is beautifully designed and extremely intuitive to use.  Download it from the App Store for free.
+                    </div>
+                    <div class="footer-group-subscrible" data-animate="zoomIn">
+                        <input type="text" onfocus="this.placeholder = ''" onblur="this.placeholder ='&#xf003;    Email'" placeholder="&#xf003;    Email">
+                        <button>SUBCRIBLE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="coppy-right" data-animate="zoomIn">
+        <div class="container" >
+            <span>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2016 Design by COSMOS</span>
+        </div>
+    </div>
+</section>
+</section>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/style.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/header_js.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+
+
+
+
+</body>
+</html>
